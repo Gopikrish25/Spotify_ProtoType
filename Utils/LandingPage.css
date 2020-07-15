@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-image: url(Headphones.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position:right ;
+  background-color: #FFD700;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  align-items: center;
+  min-height: 8vh;
+  height:74px;
+}
+.container{
+  text-align: center;
+  position:relative; right:300px; top:200px;
+}
+.text{
+  box-sizing: border-box;
+  color: black;
+  display:block;
+  font-family: circular,helvetica,arial;
+  font-size: 40px;
+  font-weight: 900px;
+  letter-spacing: -2.56;
+  text-align: center;
+  position: relative; right: 300px; top: 200px;
+}
+img{
+  cursor: pointer;
+}
+.button {
+  border-radius: 500px;
+  background-color:rgb(29, 185, 84);
+  border: none;
+  color: #FFFFFF;
+  font-family: circular,helvetica,arial;
+  font-weight: 900px;
+  text-align: center;
+  font-size: 18px;
+  padding: 18px;
+  width: 252.688px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
